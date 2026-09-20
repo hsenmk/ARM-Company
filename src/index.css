@@ -101,3 +101,25 @@ body {
   overflow-x: hidden;
 }
 
+/* Prevent accidental horizontal scrolling */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Prevent long text from forcing mobile width */
+p,
+h1,
+h2,
+h3,
+a {
+  overflow-wrap: break-word;
+}
